@@ -25,19 +25,6 @@ var AppModel = Backbone.Model.extend({
       this.set('currentSong', null);
     }, this);
 
-    // this.get('songQueue').$el.on('ended',function(){
-    //   if( !this.get('songQueue')  ){
-    //     this.set('currentSong', null)
-    //   }
-    //   else{
-    //     var currentSong = this.get('SongQueue').add(song);
-    //     this.set('currentSong', currentSong);
-    //   }
-      
-    // },this);
-
-//    this.$el.on('ended', this.model.ended())
-
   }
 
 });
