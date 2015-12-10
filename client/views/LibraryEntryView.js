@@ -5,11 +5,14 @@ var LibraryEntryView = Backbone.View.extend({
 
   template: _.template('<td>(<%= artist %>)</td><td><%= title %></td>'),
 
+  // Our library entry view needs to borrow the ended method from our songmodel
+  // Maybe through this.get('currentSong')
+  // Maybe wec ould add an ended function into our PlayerView.js that sets up the new model
+
   events: {
     'click': function() {
       this.model.enqueue();
-      this.model.play();
-    }
+      }
   },
 
   render: function(){
